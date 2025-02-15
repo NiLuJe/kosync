@@ -11,7 +11,7 @@ panic = 'abort'
 strip = 'debuginfo'
 
 [dependencies]
-axum = { version = "0.7", features = [] }
+axum = { version = "0.8", features = [] }
 axum-server = { version = "0.7", features = ["tls-rustls"] }
 tokio = { version = "1", features = ["full"] }
 serde = { version = "1", features = ["derive"] }

@@ -75,7 +75,7 @@ async fn main() {
             Router::new()
                 .route("/users/auth", get(api::auth_user))
                 .route("/syncs/progress", put(api::update_progress))
-                .route("/syncs/progress/:doc", get(api::get_progress))
+                .route("/syncs/progress/{doc}", get(api::get_progress))
                 .route("/healthcheck", get(api::healthcheck))
                 .layer(
                     ServiceBuilder::new()

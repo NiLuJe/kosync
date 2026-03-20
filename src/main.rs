@@ -120,7 +120,7 @@ async fn main() {
 }
 
 // graceful shutdown on SIGINT & SIGTERM
-async fn graceful_shutdown(handle: Handle) {
+async fn graceful_shutdown(handle: Handle<SocketAddr>) {
     let mut sigint = signal(SignalKind::interrupt()).unwrap();
     let mut sigterm = signal(SignalKind::terminate()).unwrap();
     tokio::select! {

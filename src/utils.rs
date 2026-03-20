@@ -45,5 +45,5 @@ pub(crate) fn get_remote_addr(
             .unwrap()
             .to_string()
     };
-    return addr;
+    addr
 }

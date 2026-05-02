@@ -21,9 +21,9 @@ sled = { version = "0", features = ["no_logs"] }
 log = { version = "0", features = ["release_max_level_info"] }
 tracing = { version = "0", features = ["release_max_level_info"] }
 tracing-subscriber = "0"
-shadow-rs = "1"
+shadow-rs = "2"
 tower = { version = "0.5", features = ["tokio", "tracing"] }
 tower-http = { version = "0.6", features = ["tokio", "tower", "trace", "tracing"] }
 
 [build-dependencies]
-shadow-rs = "1"
+shadow-rs = "2"
